@@ -1,0 +1,591 @@
+/* =====================================================
+   ECOSYNC - COMPLETE APP CSS
+   Clean + Professional + Responsive
+   ===================================================== */
+
+/* ---------- GLOBAL ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5faf7;
+  color: #173b2a;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar {
+  width: 100%;
+  min-height: 72px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  border-bottom: 1px solid #e1eee6;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #1f6b3b;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  padding: 10px 14px;
+  color: #456052;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-links button:hover {
+  background: #edf7f0;
+  color: #1f6b3b;
+}
+
+/* Login button */
+
+.nav-links button:last-child {
+  background: #2f8f55;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.nav-links button:last-child:hover {
+  background: #247443;
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   HOME HERO
+   ===================================================== */
+
+.hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      #e3f6e9 0%,
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f5faf7 100%
+    );
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.08;
+  color: #173b2a;
+  margin-bottom: 22px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  color: #617267;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   HERO BUTTONS
+   ===================================================== */
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  border: none;
+  padding: 13px 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.hero-buttons button:first-child {
+  background: #2f8f55;
+  color: white;
+}
+
+.hero-buttons button:first-child:hover {
+  background: #247443;
+  transform: translateY(-2px);
+}
+
+.hero-buttons button:last-child {
+  background: white;
+  color: #2f8f55;
+  border: 1px solid #b9d9c4;
+}
+
+.hero-buttons button:last-child:hover {
+  background: #edf7f0;
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   FEATURES
+   ===================================================== */
+
+.features {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 7%;
+}
+
+.features h2 {
+  text-align: center;
+  color: #173b2a;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.features > p {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #68786f;
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #dfede4;
+  box-shadow: 0 6px 20px rgba(35, 85, 55, 0.06);
+  transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(35, 85, 55, 0.11);
+}
+
+.feature-card h3 {
+  color: #245b39;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #68786f;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   NORMAL PAGES
+   ===================================================== */
+
+.page-section {
+  width: 100%;
+  max-width: 1150px;
+  min-height: calc(100vh - 72px);
+  margin: 0 auto;
+  padding: 55px 7%;
+}
+
+.page-section > h1 {
+  color: #173b2a;
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 750;
+}
+
+.page-section > p {
+  color: #617267;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 750px;
+  margin-bottom: 30px;
+}
+
+/* =====================================================
+   AI MATCHES
+   ===================================================== */
+
+.matches-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px, 1fr)
+  );
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.match-card {
+  background: #ffffff;
+  border: 1px solid #dcebe2;
+  border-radius: 18px;
+  padding: 26px;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(35, 85, 55, 0.08);
+  transition: all 0.25s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(35, 85, 55, 0.14);
+}
+
+.match-score {
+  display: inline-block;
+  background: #e5f7eb;
+  color: #18723c;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 13px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 0.4px;
+}
+
+.match-card h2 {
+  color: #173b2a;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.match-card p {
+  color: #52665a;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.match-card p strong {
+  color: #274936;
+}
+
+.match-reasons {
+  margin-top: 22px;
+  padding: 17px;
+  background: #f5faf7;
+  border-radius: 12px;
+  border-left: 4px solid #3c9b61;
+}
+
+.match-reasons strong {
+  color: #245b39;
+  font-size: 15px;
+}
+
+.match-reasons ul {
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+.match-reasons li {
+  color: #52665a;
+  font-size: 14px;
+  margin: 7px 0;
+}
+
+/* =====================================================
+   EMPTY STATE
+   ===================================================== */
+
+.empty-state {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #dcebe2;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(35, 85, 55, 0.07);
+}
+
+.empty-state h3 {
+  color: #173b2a;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #64766b;
+}
+
+/* =====================================================
+   FORMS
+   ===================================================== */
+
+.form-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid #dcebe2;
+  box-shadow: 0 8px 25px rgba(35, 85, 55, 0.08);
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #cfe0d5;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #304a39;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #3c9b61;
+  box-shadow:
+    0 0 0 3px rgba(60, 155, 97, 0.1);
+}
+
+.form-container button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #2f8f55;
+  color: white;
+  font-weight: 600;
+}
+
+.form-container button:hover {
+  background: #247443;
+}
+
+/* =====================================================
+   MODAL
+   ===================================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 50, 32, 0.48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* =====================================================
+   LOGIN MODAL
+   ===================================================== */
+
+.login-modal {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  position: relative;
+  box-shadow:
+    0 20px 50px rgba(20, 60, 35, 0.2);
+  text-align: left;
+  animation: modalAppear 0.2s ease;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.login-modal h2 {
+  color: #173b2a;
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.login-modal > p {
+  color: #68786f;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  border: none;
+  background: transparent;
+  color: #65766b;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #173b2a;
+}
+
+.login-modal input {
+  width: 100%;
+  padding: 13px 14px;
+  margin-bottom: 14px;
+  border: 1px solid #cfe0d5;
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-modal input:focus {
+  border-color: #3c9b61;
+  box-shadow:
+    0 0 0 3px rgba(60, 155, 97, 0.1);
+}
+
+.login-submit {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #2f8f55;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.login-submit:hover {
+  background: #247443;
+}
+
+.login-note {
+  text-align: center;
+  margin: 18px 0 0 !important;
+  font-size: 12px !important;
+  color: #829087 !important;
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links button {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .nav-links button:last-child {
+    padding: 8px 12px;
+    margin-left: 3px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 450px;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .page-section {
+    padding: 40px 20px;
+  }
+
+  .page-section > h1 {
+    font-size: 30px;
+  }
+
+  .matches-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .login-modal {
+    padding: 28px 22px;
+  }
+}
